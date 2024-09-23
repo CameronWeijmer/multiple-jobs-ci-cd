@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Setup Job
         run: echo "Setup Job..."
+
+  linter:
+    runs-on: ubuntu.22.04
+    steps:
+      - name: Linter
+        run: echo "Run linter..."
