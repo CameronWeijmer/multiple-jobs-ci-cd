@@ -24,7 +24,7 @@ jobs:
     needs: setup
     steps:
       - name: Job Testing
-        run: will not work
+        run: echo "Job Testing..."
 
   config:
     runs-on: ubuntu-22.04
@@ -38,7 +38,7 @@ jobs:
     needs: setup
     steps:
       - name: Update Docs
-        run: echo "Update Docs"
+        run: will not work
 
   build:
     runs-on: ubuntu-22.04
