@@ -1,0 +1,13 @@
+name: Multiple Jobs CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Setup Job
+        run: echo "Setup Job..."
