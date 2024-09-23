@@ -24,7 +24,7 @@ jobs:
     needs: setup
     steps:
       - name: Job Testing
-        run: echo "Job Testing..."
+        run: will not work
 
   config:
     runs-on: ubuntu-22.04
