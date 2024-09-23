@@ -25,3 +25,31 @@ jobs:
     steps:
       - name: Job Testing
         run: echo "Job Testing..."
+
+  config:
+    runs-on: ubuntu-22.04
+    needs: setup
+    steps:
+      - name: Check-Configuration
+        run: echo "Check Configuration"
+
+  update-docs:
+    runs-on: ubuntu-22.04
+    needs: setup
+    steps:
+      - name: Update Docs
+        run: echo "Update Docs"
+
+  build:
+    runs-on: ubuntu-22.04
+    needs: [linter, testing, config]
+    steps:
+      - name: Build
+        run: echo "Building..."
+
+  deploy:
+    runs-on: ubuntu-22.04
+    needs: build
+    steps:
+      - name: Deployment
+        run: echo "Deploying"
