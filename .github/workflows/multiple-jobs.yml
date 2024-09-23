@@ -18,3 +18,10 @@ jobs:
     steps:
       - name: Linter
         run: echo "Run linter..."
+
+  testing:
+    runs-on: ubuntu-22.04
+    needs: setup
+    steps:
+      - name: Job Testing
+        run: echo "Job Testing..."
